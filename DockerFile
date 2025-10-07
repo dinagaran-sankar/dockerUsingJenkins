@@ -1,6 +1,6 @@
 FROM mysql:latest
 
-LABEL "dinagaransankar@test.com"
+LABEL maintainer="dinagaransankar@test.com"
 
 ENV MYSQL_ROOT_PASSWORD=root
 ENV MYSQL_DATABASE=vehicle
