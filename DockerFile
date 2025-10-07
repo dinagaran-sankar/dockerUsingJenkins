@@ -1,0 +1,15 @@
+FROM mysql:latest
+
+LABEL 'dinagaransankar@test.com'
+
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=vehicle
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=root
+
+
+EXPOSE 3391
+
+ENTRYPOINT ["docker-entrypoint.sh"]
+
+CMD ["mysqld"]
